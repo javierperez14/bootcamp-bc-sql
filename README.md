@@ -1,6 +1,6 @@
 # 🧸 Bootcamp SQL — Dominio: Tienda de Juguetes
 
-**Semanas 06 a 11 | PostgreSQL / SQLite**
+**Semanas 06 a 12 | SQLite**
 
 ---
 
@@ -44,7 +44,10 @@ bootcamp/
 ├── week-10-cross_join_y_self_join/
 │   ├── README.md
 │   └── proyecto.sql
-└── week-11-subqueries/
+├── week-11-subqueries/
+│   ├── README.md
+│   └── proyecto.sql
+└── week-12-ctes_y_case_when/
     ├── README.md
     └── proyecto.sql
 ```
@@ -123,6 +126,16 @@ Se aplican los 4 tipos principales de subqueries sobre el esquema completo. 15 p
 
 ---
 
+### Semana 12 — CTEs y CASE WHEN
+**Motor:** SQLite | **Tablas:** `products`, `age_ranges`, `suppliers`, `sales`
+
+Se introducen las Common Table Expressions con `WITH` y las expresiones condicionales con `CASE WHEN`. Los CTEs reemplazan subqueries en `FROM` con código más legible; `CASE WHEN` permite clasificar filas y hacer agregaciones condicionales:
+1. Productos clasificados por banda de precio con su actividad de ventas (CTE simple + `CASE WHEN`)
+2. Categorías con ventas por encima del promedio (dos CTEs encadenados en cascada)
+3. Conteo de productos Premium / Estándar / Económico por categoría (CTE + `COUNT(CASE WHEN ...)`)
+
+---
+
 ## Progresión del esquema
 
 ```
@@ -132,6 +145,7 @@ Semana 08 → + sales (esquema completo de 4 tablas, 15 ventas)
 Semana 09 → mismo esquema, consultas relacionales con JOIN
 Semana 10 → categories con auto-referencia parent_id (jerarquía 3 niveles)
 Semana 11 → mismo esquema semana 08, consultas con subqueries
+Semana 12 → mismo esquema semana 08, CTEs simples/encadenados + CASE WHEN
 ```
 
 ---
